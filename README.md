@@ -1,2 +1,3 @@
-# software development
-zapieah's development repository
+# dev
+Hello
+This is zapieah's software development repository
