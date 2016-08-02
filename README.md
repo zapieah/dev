@@ -1,2 +1,2 @@
-# dev
-dev repository
+# software development
+zapieah's development repository
