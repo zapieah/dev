@@ -36,24 +36,31 @@ public class ThreadPoolManager {
         if (D) Log.d(TAG, "execute");
         if (mThreadPool != null)
             mThreadPool.executeUnitThread(nt);
+        else
+            Log.e(TAG, "ThreadPool is null. please get ThreadPoolManager Instance again..");
     }
 
     public void notifyThread(int id) {
         if (D) Log.d(TAG, "notify");
         if (mThreadPool != null)
             mThreadPool.notifyUnitThread(id);
+        else
+            Log.e(TAG, "ThreadPool is null. please get ThreadPoolManager Instance again..");
     }
     
     public void notifyAllThread() {
         if (D) Log.d(TAG, "notifyAllThread");
         if (mThreadPool != null)
             mThreadPool.notifyUnitThreadAll();
+        else
+            Log.e(TAG, "ThreadPool is null. please get ThreadPoolManager Instance again..");
     }
 
     public boolean setMaxThreadNumber(int max) {
         if (D) Log.d(TAG, "setMaxThreadNumber");
         if (mThreadPool != null)
             return mThreadPool.setMaxUnitThreadNumber(max);
+        Log.e(TAG, "ThreadPool is null. please get ThreadPoolManager Instance again..");
         return false;
     }
     
@@ -61,6 +68,8 @@ public class ThreadPoolManager {
         if (D) Log.d(TAG, "allowThreadTimeOut");
         if (mThreadPool != null)
             mThreadPool.allowUnitThreadTimeOut(isAllow);
+        else
+            Log.e(TAG, "ThreadPool is null. please get ThreadPoolManager Instance again..");
     }
     
     public void shutdownThread() {
@@ -75,6 +84,7 @@ public class ThreadPoolManager {
         if (D) Log.d(TAG, "getThreadCount");
         if (mThreadPool != null)
             return mThreadPool.getUnitThreadCount();
+        Log.e(TAG, "ThreadPool is null. please get ThreadPoolManager Instance again..");
         return -1;
     }
 }
