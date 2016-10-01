@@ -17,7 +17,9 @@ public class ThreadPoolManager {
         if (sThreadPoolInstance == null) {
             sThreadPoolInstance = new ThreadPoolManager();
         }
-        sThreadPoolInstance.reInit();
+        else {
+            sThreadPoolInstance.reInit();
+        }
         return sThreadPoolInstance;
     }
     
