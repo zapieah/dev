@@ -34,37 +34,47 @@ public class ThreadPoolManager {
     }
     public void executeThread(UnitThread nt) {
         if (D) Log.d(TAG, "execute");
-        mThreadPool.executeUnitThread(nt);
+        if (mThreadPool != null)
+            mThreadPool.executeUnitThread(nt);
     }
 
     public void notifyThread(int id) {
         if (D) Log.d(TAG, "notify");
-        mThreadPool.notifyUnitThread(id);
+        if (mThreadPool != null)
+            mThreadPool.notifyUnitThread(id);
     }
     
     public void notifyAllThread() {
         if (D) Log.d(TAG, "notifyAllThread");
-        mThreadPool.notifyUnitThreadAll();
+        if (mThreadPool != null)
+            mThreadPool.notifyUnitThreadAll();
     }
 
     public boolean setMaxThreadNumber(int max) {
         if (D) Log.d(TAG, "setMaxThreadNumber");
-        return mThreadPool.setMaxUnitThreadNumber(max);
+        if (mThreadPool != null)
+            return mThreadPool.setMaxUnitThreadNumber(max);
+        return false;
     }
     
     public void allowThreadTimeOut(boolean isAllow) {
         if (D) Log.d(TAG, "allowThreadTimeOut");
-        mThreadPool.allowUnitThreadTimeOut(isAllow);
+        if (mThreadPool != null)
+            mThreadPool.allowUnitThreadTimeOut(isAllow);
     }
     
     public void shutdownThread() {
         if (D) Log.d(TAG, "shutdownThread");
-        mThreadPool.shutdownUnitThread();
-        mThreadPool = null;
+        if (mThreadPool != null) {
+            mThreadPool.shutdownUnitThread();
+            mThreadPool = null;
+        }
     }
 
     public int getThreadCount() {
         if (D) Log.d(TAG, "getThreadCount");
-        return mThreadPool.getUnitThreadCount();
+        if (mThreadPool != null)
+            return mThreadPool.getUnitThreadCount();
+        return -1;
     }
 }
