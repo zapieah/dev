@@ -28,11 +28,14 @@ public class UnitThread extends Thread{
     
     private boolean mIsLooping;
     
+    private boolean mIsWait;
+    
     public UnitThread(int id, IUnitThreadCallback callback, boolean isLooping) {
         if (D) Log.d(TAG, "UnitThread");
         mId = id;
         mCallback = callback;
         mIsLooping = isLooping;
+        mIsWait = false;
         lOCK_OBJECT = new Object();
         setUnitThreadState(STATE_NONE);
     }
@@ -44,14 +47,23 @@ public class UnitThread extends Thread{
     
     public void waitThread() {
         if (D) Log.d(TAG, "waitThread");
+        if (!mIsWait) {
+            mIsWait = true;
+        }
+    }
+    
+    private void waitThreadImpl() {
+        if (D) Log.d(TAG, "waitThreadImpl");
         synchronized (UnitThread.this) {
-            if (getUnitThreadState() == STATE_RUNNING) {
-                setUnitThreadState(STATE_WAITING);
-                try {
-                    UnitThread.this.wait();
-                } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+            if (mIsWait) {
+                if (getUnitThreadState() == STATE_RUNNING) {
+                    setUnitThreadState(STATE_WAITING);
+                    try {
+                        UnitThread.this.wait();
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -61,6 +73,7 @@ public class UnitThread extends Thread{
         if (D) Log.d(TAG, "notifyThread");
         synchronized (UnitThread.this) {
             if (mState == STATE_WAITING) {
+                mIsWait = false;
                 setUnitThreadState(STATE_RUNNING);
                 UnitThread.this.notify();
             }
@@ -68,7 +81,7 @@ public class UnitThread extends Thread{
     }
     
     public int getUnitThreadState() {
-        if (D) Log.d(TAG, "getUnitThreadState");
+        //if (D) Log.d(TAG, "getUnitThreadState");
         synchronized (lOCK_OBJECT) {
             return mState;
         }
@@ -101,12 +114,15 @@ public class UnitThread extends Thread{
                     Log.d(TAG, "run looping + id = " + mId);
                     while (!Thread.currentThread().isInterrupted()) {
                         Thread.sleep(100);
+                        if (mIsWait)
+                            waitThreadImpl();
                     }
                     Log.d(TAG, "run looping - id = " + mId);
                 }
                 else {
                     Log.d(TAG, "run + id = " + mId);
                     waitThread();
+                    waitThreadImpl();
                     Log.d(TAG, "run - id = " + mId);
                 }
                 mCallback.onThreadFinishedCallback(mId, new Object());
@@ -120,5 +136,9 @@ public class UnitThread extends Thread{
             }
         }
     }
-
 }
+
+
+
+
+

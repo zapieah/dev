@@ -62,6 +62,7 @@ public class UnitThreadManager {
     }
 
     public int getUnitThreadState(int id) {
+        //if (D) Log.d(TAG, "getUnitThreadState");
         if (mThreadPool != null) {
             for (UnitThread t : mThreadPool) {
                 if (t.getUnitThreadId() == id) {
