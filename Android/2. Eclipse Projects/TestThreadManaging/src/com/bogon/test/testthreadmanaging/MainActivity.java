@@ -32,10 +32,10 @@ public class MainActivity extends Activity {
     private int mId;
 
     @Override
-    protected void onStop() {
+    protected void onDestroy() {
         // TODO Auto-generated method stub
         UnitThreadManager.getInstance().shutdown();
-        super.onStop();
+        super.onDestroy();
     }
 
     @Override

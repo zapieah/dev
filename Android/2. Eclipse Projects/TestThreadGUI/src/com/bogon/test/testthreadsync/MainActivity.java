@@ -75,10 +75,12 @@ public class MainActivity extends Activity {
     }
 
     private void stopProcessing() {
-        if (mThread.isAlive() && !mThread.isInterrupted() &&
-                mThread.getState() != Thread.State.TERMINATED) {
-            mThread.interrupt();
-            mThread = null;
+        if (mThread != null) {
+            if (mThread.isAlive() && !mThread.isInterrupted() &&
+                    mThread.getState() != Thread.State.TERMINATED) {
+                mThread.interrupt();
+                mThread = null;
+            }
         }
     }
 
