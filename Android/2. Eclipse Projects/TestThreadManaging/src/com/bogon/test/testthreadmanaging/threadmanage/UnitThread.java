@@ -24,7 +24,7 @@ public class UnitThread extends Thread{
     
     private int mState;
     
-    private Object lOCK_OBJECT;
+    private Object LOCK_OBJECT;
     
     private boolean mIsLooping;
     
@@ -36,7 +36,7 @@ public class UnitThread extends Thread{
         mCallback = callback;
         mIsLooping = isLooping;
         mIsWait = false;
-        lOCK_OBJECT = new Object();
+        LOCK_OBJECT = new Object();
         setUnitThreadState(STATE_NONE);
     }
     
@@ -52,7 +52,7 @@ public class UnitThread extends Thread{
         }
     }
     
-    private void waitThreadImpl() {
+    private void waitThreadImpl() throws InterruptedException {
         synchronized (UnitThread.this) {
             if (mIsWait) {
                 if (getUnitThreadState() == STATE_RUNNING) {
@@ -61,7 +61,7 @@ public class UnitThread extends Thread{
                         UnitThread.this.wait();
                     } catch (InterruptedException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        throw new InterruptedException();
                     }
                 }
             }
@@ -81,14 +81,14 @@ public class UnitThread extends Thread{
     
     public int getUnitThreadState() {
         //if (D) Log.d(TAG, "getUnitThreadState");
-        synchronized (lOCK_OBJECT) {
+        synchronized (LOCK_OBJECT) {
             return mState;
         }
     }
     
     private void setUnitThreadState(int state) {
         if (D) Log.d(TAG, "setUnitThreadState");
-        synchronized (lOCK_OBJECT) {
+        synchronized (LOCK_OBJECT) {
             if (mStateCallback != null)
                 mStateCallback.onStateChanged(mId, mState, state);
             mState = state;
@@ -128,6 +128,7 @@ public class UnitThread extends Thread{
                 setUnitThreadState(STATE_NONE);
             }
             catch(java.lang.Exception e) {
+                Thread.currentThread().interrupt();
                 setUnitThreadState(STATE_NONE);
             }
             finally {

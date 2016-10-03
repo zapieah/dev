@@ -52,7 +52,7 @@ public class UnitThread extends Thread{
         }
     }
     
-    private void waitThreadImpl() {
+    private void waitThreadImpl() throws InterruptedException {
         if (D) Log.d(TAG, "waitThreadImpl");
         synchronized (UnitThread.this) {
             if (mIsWait) {
@@ -63,6 +63,7 @@ public class UnitThread extends Thread{
                     } catch (InterruptedException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
+                        throw new InterruptedException();
                     }
                 }
             }
@@ -129,6 +130,7 @@ public class UnitThread extends Thread{
                 setUnitThreadState(STATE_NONE);
             }
             catch(java.lang.Exception e) {
+                Thread.currentThread().interrupt();
                 setUnitThreadState(STATE_NONE);
             }
             finally {
