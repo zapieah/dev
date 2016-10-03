@@ -68,15 +68,13 @@ public class MainActivity extends Activity {
     }
     
     private void startProcessing() {
-        mThread = new Thread(null, doBackgroundProcessing, "Background");
+        mThread = new Thread(null, doBackgroundProcessing, "UpdateGUIThread");
         mThread.start();
     }
 
     private void stopProcessing() {
-        System.out.println("state = " + mThread.getState());
         if (mThread.isAlive() && !mThread.isInterrupted() &&
                 mThread.getState() != Thread.State.TERMINATED) {
-            System.out.println("interrupt");
             mThread.interrupt();
         }
     }
@@ -110,11 +108,11 @@ public class MainActivity extends Activity {
         @Override
         public void run() {
             // TODO Auto-generated method stub
-            updateGUI();
+            updateTextView();
         }
     };
     
-    private void updateGUI() {
+    private void updateTextView() {
         mTextView.setText("Thread send id = " + mId);
     }
 }
