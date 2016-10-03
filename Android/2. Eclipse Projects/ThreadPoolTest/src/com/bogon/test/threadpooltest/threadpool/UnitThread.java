@@ -58,13 +58,7 @@ public class UnitThread extends Thread{
             if (mIsWait) {
                 if (getUnitThreadState() == STATE_RUNNING) {
                     setUnitThreadState(STATE_WAITING);
-                    try {
-                        UnitThread.this.wait();
-                    } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                        throw new InterruptedException();
-                    }
+                    UnitThread.this.wait();
                 }
             }
         }

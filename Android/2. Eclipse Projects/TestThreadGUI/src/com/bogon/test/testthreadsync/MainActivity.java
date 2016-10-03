@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
                     backgroundThreadProcessing();
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     // TODO Auto-generated catch block
                     Thread.currentThread().interrupt();
                 }
@@ -100,14 +100,7 @@ public class MainActivity extends Activity {
     private void backgroundThreadProcessing() throws InterruptedException {
         for (int i = 0; i < 10000; i++) {
             mId = i;
-            try {
-                Thread.sleep(100);
-                mHandler.post(doUpdateGUI);
-            } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-                throw new InterruptedException();
-            }
+            Thread.sleep(100);
             mHandler.post(doUpdateGUI);
         }
     }
