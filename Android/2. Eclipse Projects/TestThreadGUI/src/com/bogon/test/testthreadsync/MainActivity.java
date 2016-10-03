@@ -68,14 +68,17 @@ public class MainActivity extends Activity {
     }
     
     private void startProcessing() {
-        mThread = new Thread(null, doBackgroundProcessing, "UpdateGUIThread");
-        mThread.start();
+        if (mThread == null) {
+            mThread = new Thread(null, doBackgroundProcessing, "UpdateGUIThread");
+            mThread.start();
+        }
     }
 
     private void stopProcessing() {
         if (mThread.isAlive() && !mThread.isInterrupted() &&
                 mThread.getState() != Thread.State.TERMINATED) {
             mThread.interrupt();
+            mThread = null;
         }
     }
 
@@ -114,5 +117,12 @@ public class MainActivity extends Activity {
     
     private void updateTextView() {
         mTextView.setText("Thread send id = " + mId);
+    }
+
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+        stopProcessing();
+        super.onDestroy();
     }
 }
