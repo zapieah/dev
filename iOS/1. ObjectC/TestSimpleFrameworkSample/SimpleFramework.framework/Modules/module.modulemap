@@ -1,0 +1,6 @@
+framework module SimpleFramework {
+  umbrella header "SimpleFramework.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F3E18C01DF7AA4100BAC693 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18BF1DF7AA4100BAC693 /* main.m */; };
+		0F3E18E61DF7AAB200BAC693 /* TestCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18C71DF7AAB200BAC693 /* TestCopyObject.m */; };
+		0F3E18E71DF7AAB200BAC693 /* TestStringCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18C91DF7AAB200BAC693 /* TestStringCollection.m */; };
+		0F3E18E81DF7AAB200BAC693 /* TestStringCollection2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18CB1DF7AAB200BAC693 /* TestStringCollection2.m */; };
+		0F3E18E91DF7AAB200BAC693 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18CD1DF7AAB200BAC693 /* TestBlock.m */; };
+		0F3E18EA1DF7AAB200BAC693 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18CF1DF7AAB200BAC693 /* TestClass.m */; };
+		0F3E18EB1DF7AAB200BAC693 /* TestClassAccessModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18D11DF7AAB200BAC693 /* TestClassAccessModifier.m */; };
+		0F3E18EC1DF7AAB200BAC693 /* TestClassConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18D31DF7AAB200BAC693 /* TestClassConstructor.m */; };
+		0F3E18ED1DF7AAB200BAC693 /* TestClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18D51DF7AAB200BAC693 /* TestClassMethod.m */; };
+		0F3E18EE1DF7AAB200BAC693 /* TestDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18D71DF7AAB200BAC693 /* TestDic.m */; };
+		0F3E18EF1DF7AAB200BAC693 /* TestNSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18D91DF7AAB200BAC693 /* TestNSData.m */; };
+		0F3E18F01DF7AAB200BAC693 /* TestOverloading.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18DB1DF7AAB200BAC693 /* TestOverloading.m */; };
+		0F3E18F11DF7AAB200BAC693 /* TestOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18DD1DF7AAB200BAC693 /* TestOverride.m */; };
+		0F3E18F21DF7AAB200BAC693 /* TestSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18DF1DF7AAB200BAC693 /* TestSelector.m */; };
+		0F3E18F31DF7AAB200BAC693 /* TestSelector2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18E11DF7AAB200BAC693 /* TestSelector2.m */; };
+		0F3E18F41DF7AAB200BAC693 /* TestSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18E31DF7AAB200BAC693 /* TestSelf.m */; };
+		0F3E18F51DF7AAB200BAC693 /* TestSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E18E51DF7AAB200BAC693 /* TestSubClass.m */; };
+		0F3E19111DF7ED2900BAC693 /* TestCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E19101DF7ED2900BAC693 /* TestCategory.m */; };
+		0F3E19141DF7EDF300BAC693 /* TestCategory+CategoryA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E19131DF7EDF300BAC693 /* TestCategory+CategoryA.m */; };
+		0F3E19171DF7EF8700BAC693 /* TestCategory+CategoryB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E19161DF7EF8700BAC693 /* TestCategory+CategoryB.m */; };
+		0F4396591DFE60E40057E598 /* TestTipClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4396581DFE60E40057E598 /* TestTipClass.m */; };
+		0F43965D1DFE67A90057E598 /* TestKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F43965C1DFE67A90057E598 /* TestKeyValueObserver.m */; };
+		0F4396621DFE6F080057E598 /* TestLoopClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4396611DFE6F080057E598 /* TestLoopClass.m */; };
+		0F4396651DFE97020057E598 /* TestProperty2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4396641DFE97020057E598 /* TestProperty2.m */; };
+		0F5D03131DF95178001CFF0D /* TestProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5D03121DF95178001CFF0D /* TestProperty.m */; };
+		0F66E0F71E023AD500AEC05B /* TestNSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F66E0F61E023AD500AEC05B /* TestNSThread.m */; };
+		0FAF214E1E00EF16009BB14A /* TestMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF214D1E00EF16009BB14A /* TestMutableArray.m */; };
+		0FB26D471DFFC7D60032376F /* FruitBasket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D461DFFC7D60032376F /* FruitBasket.m */; };
+		0FB26D4E1DFFC7F40032376F /* TablePrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D4C1DFFC7F40032376F /* TablePrinter.m */; };
+		0FB26D521DFFC7FB0032376F /* TestClassProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D501DFFC7FB0032376F /* TestClassProtocol.m */; };
+		0FB26D551DFFC8020032376F /* TestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D541DFFC8020032376F /* TestProtocol.m */; };
+		0FB26D581DFFC80D0032376F /* TestMainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D571DFFC80D0032376F /* TestMainClass.m */; };
+		0FB26D5B1DFFDA720032376F /* TestEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D5A1DFFDA720032376F /* TestEnum.m */; };
+		0FB26D5F1DFFECCF0032376F /* TestFunctionPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D5E1DFFECCF0032376F /* TestFunctionPointer.m */; };
+		0FB26D631DFFF3640032376F /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB26D621DFFF3640032376F /* TestGCD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F3E18BA1DF7AA4100BAC693 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F3E18BC1DF7AA4100BAC693 /* TestObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3E18BF1DF7AA4100BAC693 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F3E18C61DF7AAB200BAC693 /* TestCopyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCopyObject.h; sourceTree = "<group>"; };
+		0F3E18C71DF7AAB200BAC693 /* TestCopyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCopyObject.m; sourceTree = "<group>"; };
+		0F3E18C81DF7AAB200BAC693 /* TestStringCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStringCollection.h; sourceTree = "<group>"; };
+		0F3E18C91DF7AAB200BAC693 /* TestStringCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringCollection.m; sourceTree = "<group>"; };
+		0F3E18CA1DF7AAB200BAC693 /* TestStringCollection2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStringCollection2.h; sourceTree = "<group>"; };
+		0F3E18CB1DF7AAB200BAC693 /* TestStringCollection2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringCollection2.m; sourceTree = "<group>"; };
+		0F3E18CC1DF7AAB200BAC693 /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
+		0F3E18CD1DF7AAB200BAC693 /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
+		0F3E18CE1DF7AAB200BAC693 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		0F3E18CF1DF7AAB200BAC693 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		0F3E18D01DF7AAB200BAC693 /* TestClassAccessModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassAccessModifier.h; sourceTree = "<group>"; };
+		0F3E18D11DF7AAB200BAC693 /* TestClassAccessModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassAccessModifier.m; sourceTree = "<group>"; };
+		0F3E18D21DF7AAB200BAC693 /* TestClassConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassConstructor.h; sourceTree = "<group>"; };
+		0F3E18D31DF7AAB200BAC693 /* TestClassConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassConstructor.m; sourceTree = "<group>"; };
+		0F3E18D41DF7AAB200BAC693 /* TestClassMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassMethod.h; sourceTree = "<group>"; };
+		0F3E18D51DF7AAB200BAC693 /* TestClassMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassMethod.m; sourceTree = "<group>"; };
+		0F3E18D61DF7AAB200BAC693 /* TestDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDic.h; sourceTree = "<group>"; };
+		0F3E18D71DF7AAB200BAC693 /* TestDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDic.m; sourceTree = "<group>"; };
+		0F3E18D81DF7AAB200BAC693 /* TestNSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNSData.h; sourceTree = "<group>"; };
+		0F3E18D91DF7AAB200BAC693 /* TestNSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNSData.m; sourceTree = "<group>"; };
+		0F3E18DA1DF7AAB200BAC693 /* TestOverloading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOverloading.h; sourceTree = "<group>"; };
+		0F3E18DB1DF7AAB200BAC693 /* TestOverloading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOverloading.m; sourceTree = "<group>"; };
+		0F3E18DC1DF7AAB200BAC693 /* TestOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOverride.h; sourceTree = "<group>"; };
+		0F3E18DD1DF7AAB200BAC693 /* TestOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOverride.m; sourceTree = "<group>"; };
+		0F3E18DE1DF7AAB200BAC693 /* TestSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSelector.h; sourceTree = "<group>"; };
+		0F3E18DF1DF7AAB200BAC693 /* TestSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSelector.m; sourceTree = "<group>"; };
+		0F3E18E01DF7AAB200BAC693 /* TestSelector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSelector2.h; sourceTree = "<group>"; };
+		0F3E18E11DF7AAB200BAC693 /* TestSelector2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSelector2.m; sourceTree = "<group>"; };
+		0F3E18E21DF7AAB200BAC693 /* TestSelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSelf.h; sourceTree = "<group>"; };
+		0F3E18E31DF7AAB200BAC693 /* TestSelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSelf.m; sourceTree = "<group>"; };
+		0F3E18E41DF7AAB200BAC693 /* TestSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubClass.h; sourceTree = "<group>"; };
+		0F3E18E51DF7AAB200BAC693 /* TestSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSubClass.m; sourceTree = "<group>"; };
+		0F3E190F1DF7ED2900BAC693 /* TestCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCategory.h; sourceTree = "<group>"; };
+		0F3E19101DF7ED2900BAC693 /* TestCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCategory.m; sourceTree = "<group>"; };
+		0F3E19121DF7EDF300BAC693 /* TestCategory+CategoryA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCategory+CategoryA.h"; sourceTree = "<group>"; };
+		0F3E19131DF7EDF300BAC693 /* TestCategory+CategoryA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCategory+CategoryA.m"; sourceTree = "<group>"; };
+		0F3E19151DF7EF8700BAC693 /* TestCategory+CategoryB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCategory+CategoryB.h"; sourceTree = "<group>"; };
+		0F3E19161DF7EF8700BAC693 /* TestCategory+CategoryB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCategory+CategoryB.m"; sourceTree = "<group>"; };
+		0F4396571DFE60E40057E598 /* TestTipClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTipClass.h; sourceTree = "<group>"; };
+		0F4396581DFE60E40057E598 /* TestTipClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTipClass.m; sourceTree = "<group>"; };
+		0F43965B1DFE67A90057E598 /* TestKeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKeyValueObserver.h; sourceTree = "<group>"; };
+		0F43965C1DFE67A90057E598 /* TestKeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKeyValueObserver.m; sourceTree = "<group>"; };
+		0F4396601DFE6F080057E598 /* TestLoopClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLoopClass.h; sourceTree = "<group>"; };
+		0F4396611DFE6F080057E598 /* TestLoopClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLoopClass.m; sourceTree = "<group>"; };
+		0F4396631DFE97020057E598 /* TestProperty2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProperty2.h; sourceTree = "<group>"; };
+		0F4396641DFE97020057E598 /* TestProperty2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProperty2.m; sourceTree = "<group>"; };
+		0F5D03111DF95178001CFF0D /* TestProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProperty.h; sourceTree = "<group>"; };
+		0F5D03121DF95178001CFF0D /* TestProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProperty.m; sourceTree = "<group>"; };
+		0F66E0F51E023AD500AEC05B /* TestNSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNSThread.h; sourceTree = "<group>"; };
+		0F66E0F61E023AD500AEC05B /* TestNSThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNSThread.m; sourceTree = "<group>"; };
+		0FAF214C1E00EF16009BB14A /* TestMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMutableArray.h; sourceTree = "<group>"; };
+		0FAF214D1E00EF16009BB14A /* TestMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMutableArray.m; sourceTree = "<group>"; };
+		0FB26D441DFFC7D60032376F /* DrawbleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawbleItem.h; path = TestObjectiveC/DrawbleItem.h; sourceTree = "<group>"; };
+		0FB26D451DFFC7D60032376F /* FruitBasket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FruitBasket.h; path = TestObjectiveC/FruitBasket.h; sourceTree = "<group>"; };
+		0FB26D461DFFC7D60032376F /* FruitBasket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FruitBasket.m; path = TestObjectiveC/FruitBasket.m; sourceTree = "<group>"; };
+		0FB26D4B1DFFC7F40032376F /* TablePrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TablePrinter.h; path = TestObjectiveC/TablePrinter.h; sourceTree = "<group>"; };
+		0FB26D4C1DFFC7F40032376F /* TablePrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TablePrinter.m; path = TestObjectiveC/TablePrinter.m; sourceTree = "<group>"; };
+		0FB26D4D1DFFC7F40032376F /* TablePrinterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TablePrinterDataSource.h; path = TestObjectiveC/TablePrinterDataSource.h; sourceTree = "<group>"; };
+		0FB26D4F1DFFC7FB0032376F /* TestClassProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestClassProtocol.h; path = TestObjectiveC/TestClassProtocol.h; sourceTree = "<group>"; };
+		0FB26D501DFFC7FB0032376F /* TestClassProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestClassProtocol.m; path = TestObjectiveC/TestClassProtocol.m; sourceTree = "<group>"; };
+		0FB26D511DFFC7FB0032376F /* TestClassProtocolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestClassProtocolDelegate.h; path = TestObjectiveC/TestClassProtocolDelegate.h; sourceTree = "<group>"; };
+		0FB26D531DFFC8020032376F /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestProtocol.h; path = TestObjectiveC/TestProtocol.h; sourceTree = "<group>"; };
+		0FB26D541DFFC8020032376F /* TestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestProtocol.m; path = TestObjectiveC/TestProtocol.m; sourceTree = "<group>"; };
+		0FB26D561DFFC80D0032376F /* TestMainClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestMainClass.h; path = TestObjectiveC/TestMainClass.h; sourceTree = "<group>"; };
+		0FB26D571DFFC80D0032376F /* TestMainClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestMainClass.m; path = TestObjectiveC/TestMainClass.m; sourceTree = "<group>"; };
+		0FB26D591DFFDA720032376F /* TestEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEnum.h; sourceTree = "<group>"; };
+		0FB26D5A1DFFDA720032376F /* TestEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEnum.m; sourceTree = "<group>"; };
+		0FB26D5D1DFFECCF0032376F /* TestFunctionPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunctionPointer.h; sourceTree = "<group>"; };
+		0FB26D5E1DFFECCF0032376F /* TestFunctionPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunctionPointer.m; sourceTree = "<group>"; };
+		0FB26D611DFFF3640032376F /* TestGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCD.h; sourceTree = "<group>"; };
+		0FB26D621DFFF3640032376F /* TestGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F3E18B91DF7AA4100BAC693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F3E18B31DF7AA4100BAC693 = {
+			isa = PBXGroup;
+			children = (
+				0F3E18BE1DF7AA4100BAC693 /* TestObjectiveC */,
+				0F3E18BD1DF7AA4100BAC693 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F3E18BD1DF7AA4100BAC693 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18BC1DF7AA4100BAC693 /* TestObjectiveC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F3E18BE1DF7AA4100BAC693 /* TestObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				0F66E0F41E023AC600AEC05B /* TestNSThread */,
+				0FAF214B1E00EEFE009BB14A /* TestMutableArray */,
+				0FB26D601DFFF3400032376F /* TestGCD */,
+				0FB26D5C1DFFECAE0032376F /* TestFunctionPointer */,
+				0F43965F1DFE6EF80057E598 /* TestLoopClass */,
+				0F43965E1DFE6A220057E598 /* TestEnum */,
+				0F43965A1DFE67930057E598 /* TestKeyValueObserver */,
+				0F4396561DFE60CA0057E598 /* TestTipClass */,
+				0F5D03101DF95160001CFF0D /* TestProperty */,
+				0FE3EB701DF7F5DD002278E9 /* TestProtocol */,
+				0F3E190E1DF7EC7B00BAC693 /* TestCopyObject */,
+				0F3E190D1DF7EC7A00BAC693 /* TestStringCollection */,
+				0F3E190C1DF7EC7A00BAC693 /* TestStringCollection2 */,
+				0F3E190B1DF7EC7900BAC693 /* TestBlock */,
+				0F3E190A1DF7EC7800BAC693 /* TestClass */,
+				0F3E19091DF7EC7700BAC693 /* TestClassAccessModifier */,
+				0F3E19081DF7EC7700BAC693 /* TestClassConstructor */,
+				0F3E19071DF7EC7600BAC693 /* TestClassMethod */,
+				0F3E19061DF7EC7500BAC693 /* TestDic */,
+				0F3E19051DF7EC7400BAC693 /* TestNSData */,
+				0F3E19041DF7EC7300BAC693 /* TestOverloading */,
+				0F3E19031DF7EC7200BAC693 /* TestOverride */,
+				0F3E19011DF7EC6D00BAC693 /* TestSelector */,
+				0F3E19001DF7EC6800BAC693 /* TestSelector2 */,
+				0F3E18FA1DF7EC5800BAC693 /* TestSelf */,
+				0F3E18F91DF7EC5700BAC693 /* TestSubClass */,
+				0F3E18F81DF7EC4100BAC693 /* TestCategory */,
+				0F3E18BF1DF7AA4100BAC693 /* main.m */,
+			);
+			path = TestObjectiveC;
+			sourceTree = "<group>";
+		};
+		0F3E18F81DF7EC4100BAC693 /* TestCategory */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E190F1DF7ED2900BAC693 /* TestCategory.h */,
+				0F3E19101DF7ED2900BAC693 /* TestCategory.m */,
+				0F3E19121DF7EDF300BAC693 /* TestCategory+CategoryA.h */,
+				0F3E19131DF7EDF300BAC693 /* TestCategory+CategoryA.m */,
+				0F3E19151DF7EF8700BAC693 /* TestCategory+CategoryB.h */,
+				0F3E19161DF7EF8700BAC693 /* TestCategory+CategoryB.m */,
+			);
+			name = TestCategory;
+			sourceTree = "<group>";
+		};
+		0F3E18F91DF7EC5700BAC693 /* TestSubClass */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18E41DF7AAB200BAC693 /* TestSubClass.h */,
+				0F3E18E51DF7AAB200BAC693 /* TestSubClass.m */,
+			);
+			name = TestSubClass;
+			sourceTree = "<group>";
+		};
+		0F3E18FA1DF7EC5800BAC693 /* TestSelf */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18E21DF7AAB200BAC693 /* TestSelf.h */,
+				0F3E18E31DF7AAB200BAC693 /* TestSelf.m */,
+			);
+			name = TestSelf;
+			sourceTree = "<group>";
+		};
+		0F3E19001DF7EC6800BAC693 /* TestSelector2 */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18E01DF7AAB200BAC693 /* TestSelector2.h */,
+				0F3E18E11DF7AAB200BAC693 /* TestSelector2.m */,
+			);
+			name = TestSelector2;
+			sourceTree = "<group>";
+		};
+		0F3E19011DF7EC6D00BAC693 /* TestSelector */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18DE1DF7AAB200BAC693 /* TestSelector.h */,
+				0F3E18DF1DF7AAB200BAC693 /* TestSelector.m */,
+			);
+			name = TestSelector;
+			sourceTree = "<group>";
+		};
+		0F3E19031DF7EC7200BAC693 /* TestOverride */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18DC1DF7AAB200BAC693 /* TestOverride.h */,
+				0F3E18DD1DF7AAB200BAC693 /* TestOverride.m */,
+			);
+			name = TestOverride;
+			sourceTree = "<group>";
+		};
+		0F3E19041DF7EC7300BAC693 /* TestOverloading */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18DA1DF7AAB200BAC693 /* TestOverloading.h */,
+				0F3E18DB1DF7AAB200BAC693 /* TestOverloading.m */,
+			);
+			name = TestOverloading;
+			sourceTree = "<group>";
+		};
+		0F3E19051DF7EC7400BAC693 /* TestNSData */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18D81DF7AAB200BAC693 /* TestNSData.h */,
+				0F3E18D91DF7AAB200BAC693 /* TestNSData.m */,
+			);
+			name = TestNSData;
+			sourceTree = "<group>";
+		};
+		0F3E19061DF7EC7500BAC693 /* TestDic */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18D61DF7AAB200BAC693 /* TestDic.h */,
+				0F3E18D71DF7AAB200BAC693 /* TestDic.m */,
+			);
+			name = TestDic;
+			sourceTree = "<group>";
+		};
+		0F3E19071DF7EC7600BAC693 /* TestClassMethod */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18D41DF7AAB200BAC693 /* TestClassMethod.h */,
+				0F3E18D51DF7AAB200BAC693 /* TestClassMethod.m */,
+			);
+			name = TestClassMethod;
+			sourceTree = "<group>";
+		};
+		0F3E19081DF7EC7700BAC693 /* TestClassConstructor */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18D21DF7AAB200BAC693 /* TestClassConstructor.h */,
+				0F3E18D31DF7AAB200BAC693 /* TestClassConstructor.m */,
+			);
+			name = TestClassConstructor;
+			sourceTree = "<group>";
+		};
+		0F3E19091DF7EC7700BAC693 /* TestClassAccessModifier */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18D01DF7AAB200BAC693 /* TestClassAccessModifier.h */,
+				0F3E18D11DF7AAB200BAC693 /* TestClassAccessModifier.m */,
+			);
+			name = TestClassAccessModifier;
+			sourceTree = "<group>";
+		};
+		0F3E190A1DF7EC7800BAC693 /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18CE1DF7AAB200BAC693 /* TestClass.h */,
+				0F3E18CF1DF7AAB200BAC693 /* TestClass.m */,
+			);
+			name = TestClass;
+			sourceTree = "<group>";
+		};
+		0F3E190B1DF7EC7900BAC693 /* TestBlock */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18CC1DF7AAB200BAC693 /* TestBlock.h */,
+				0F3E18CD1DF7AAB200BAC693 /* TestBlock.m */,
+			);
+			name = TestBlock;
+			sourceTree = "<group>";
+		};
+		0F3E190C1DF7EC7A00BAC693 /* TestStringCollection2 */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18CA1DF7AAB200BAC693 /* TestStringCollection2.h */,
+				0F3E18CB1DF7AAB200BAC693 /* TestStringCollection2.m */,
+			);
+			name = TestStringCollection2;
+			sourceTree = "<group>";
+		};
+		0F3E190D1DF7EC7A00BAC693 /* TestStringCollection */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18C81DF7AAB200BAC693 /* TestStringCollection.h */,
+				0F3E18C91DF7AAB200BAC693 /* TestStringCollection.m */,
+			);
+			name = TestStringCollection;
+			sourceTree = "<group>";
+		};
+		0F3E190E1DF7EC7B00BAC693 /* TestCopyObject */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E18C61DF7AAB200BAC693 /* TestCopyObject.h */,
+				0F3E18C71DF7AAB200BAC693 /* TestCopyObject.m */,
+			);
+			name = TestCopyObject;
+			sourceTree = "<group>";
+		};
+		0F4396561DFE60CA0057E598 /* TestTipClass */ = {
+			isa = PBXGroup;
+			children = (
+				0F4396571DFE60E40057E598 /* TestTipClass.h */,
+				0F4396581DFE60E40057E598 /* TestTipClass.m */,
+			);
+			name = TestTipClass;
+			sourceTree = "<group>";
+		};
+		0F43965A1DFE67930057E598 /* TestKeyValueObserver */ = {
+			isa = PBXGroup;
+			children = (
+				0F43965B1DFE67A90057E598 /* TestKeyValueObserver.h */,
+				0F43965C1DFE67A90057E598 /* TestKeyValueObserver.m */,
+			);
+			name = TestKeyValueObserver;
+			sourceTree = "<group>";
+		};
+		0F43965E1DFE6A220057E598 /* TestEnum */ = {
+			isa = PBXGroup;
+			children = (
+				0FB26D591DFFDA720032376F /* TestEnum.h */,
+				0FB26D5A1DFFDA720032376F /* TestEnum.m */,
+			);
+			name = TestEnum;
+			sourceTree = "<group>";
+		};
+		0F43965F1DFE6EF80057E598 /* TestLoopClass */ = {
+			isa = PBXGroup;
+			children = (
+				0F4396601DFE6F080057E598 /* TestLoopClass.h */,
+				0F4396611DFE6F080057E598 /* TestLoopClass.m */,
+			);
+			name = TestLoopClass;
+			sourceTree = "<group>";
+		};
+		0F5D03101DF95160001CFF0D /* TestProperty */ = {
+			isa = PBXGroup;
+			children = (
+				0F5D03111DF95178001CFF0D /* TestProperty.h */,
+				0F5D03121DF95178001CFF0D /* TestProperty.m */,
+				0F4396631DFE97020057E598 /* TestProperty2.h */,
+				0F4396641DFE97020057E598 /* TestProperty2.m */,
+			);
+			name = TestProperty;
+			sourceTree = "<group>";
+		};
+		0F66E0F41E023AC600AEC05B /* TestNSThread */ = {
+			isa = PBXGroup;
+			children = (
+				0F66E0F51E023AD500AEC05B /* TestNSThread.h */,
+				0F66E0F61E023AD500AEC05B /* TestNSThread.m */,
+			);
+			name = TestNSThread;
+			sourceTree = "<group>";
+		};
+		0FAF214B1E00EEFE009BB14A /* TestMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				0FAF214C1E00EF16009BB14A /* TestMutableArray.h */,
+				0FAF214D1E00EF16009BB14A /* TestMutableArray.m */,
+			);
+			name = TestMutableArray;
+			sourceTree = "<group>";
+		};
+		0FB26D5C1DFFECAE0032376F /* TestFunctionPointer */ = {
+			isa = PBXGroup;
+			children = (
+				0FB26D5D1DFFECCF0032376F /* TestFunctionPointer.h */,
+				0FB26D5E1DFFECCF0032376F /* TestFunctionPointer.m */,
+			);
+			name = TestFunctionPointer;
+			sourceTree = "<group>";
+		};
+		0FB26D601DFFF3400032376F /* TestGCD */ = {
+			isa = PBXGroup;
+			children = (
+				0FB26D611DFFF3640032376F /* TestGCD.h */,
+				0FB26D621DFFF3640032376F /* TestGCD.m */,
+			);
+			name = TestGCD;
+			sourceTree = "<group>";
+		};
+		0FE3EB701DF7F5DD002278E9 /* TestProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				0FB26D561DFFC80D0032376F /* TestMainClass.h */,
+				0FB26D571DFFC80D0032376F /* TestMainClass.m */,
+				0FB26D531DFFC8020032376F /* TestProtocol.h */,
+				0FB26D541DFFC8020032376F /* TestProtocol.m */,
+				0FB26D4F1DFFC7FB0032376F /* TestClassProtocol.h */,
+				0FB26D501DFFC7FB0032376F /* TestClassProtocol.m */,
+				0FB26D511DFFC7FB0032376F /* TestClassProtocolDelegate.h */,
+				0FB26D4B1DFFC7F40032376F /* TablePrinter.h */,
+				0FB26D4C1DFFC7F40032376F /* TablePrinter.m */,
+				0FB26D4D1DFFC7F40032376F /* TablePrinterDataSource.h */,
+				0FB26D441DFFC7D60032376F /* DrawbleItem.h */,
+				0FB26D451DFFC7D60032376F /* FruitBasket.h */,
+				0FB26D461DFFC7D60032376F /* FruitBasket.m */,
+			);
+			name = TestProtocol;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F3E18BB1DF7AA4100BAC693 /* TestObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F3E18C31DF7AA4100BAC693 /* Build configuration list for PBXNativeTarget "TestObjectiveC" */;
+			buildPhases = (
+				0F3E18B81DF7AA4100BAC693 /* Sources */,
+				0F3E18B91DF7AA4100BAC693 /* Frameworks */,
+				0F3E18BA1DF7AA4100BAC693 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestObjectiveC;
+			productName = TestObjectiveC;
+			productReference = 0F3E18BC1DF7AA4100BAC693 /* TestObjectiveC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F3E18B41DF7AA4100BAC693 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.bogon;
+				TargetAttributes = {
+					0F3E18BB1DF7AA4100BAC693 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = DFUVB798T7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0F3E18B71DF7AA4100BAC693 /* Build configuration list for PBXProject "TestObjectiveC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F3E18B31DF7AA4100BAC693;
+			productRefGroup = 0F3E18BD1DF7AA4100BAC693 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F3E18BB1DF7AA4100BAC693 /* TestObjectiveC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F3E18B81DF7AA4100BAC693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3E18EB1DF7AAB200BAC693 /* TestClassAccessModifier.m in Sources */,
+				0F3E18EA1DF7AAB200BAC693 /* TestClass.m in Sources */,
+				0F3E19171DF7EF8700BAC693 /* TestCategory+CategoryB.m in Sources */,
+				0F3E19141DF7EDF300BAC693 /* TestCategory+CategoryA.m in Sources */,
+				0F3E18E91DF7AAB200BAC693 /* TestBlock.m in Sources */,
+				0F3E18F51DF7AAB200BAC693 /* TestSubClass.m in Sources */,
+				0F3E18E71DF7AAB200BAC693 /* TestStringCollection.m in Sources */,
+				0F3E18C01DF7AA4100BAC693 /* main.m in Sources */,
+				0F4396621DFE6F080057E598 /* TestLoopClass.m in Sources */,
+				0F4396591DFE60E40057E598 /* TestTipClass.m in Sources */,
+				0FAF214E1E00EF16009BB14A /* TestMutableArray.m in Sources */,
+				0F3E18EC1DF7AAB200BAC693 /* TestClassConstructor.m in Sources */,
+				0F3E19111DF7ED2900BAC693 /* TestCategory.m in Sources */,
+				0F3E18F01DF7AAB200BAC693 /* TestOverloading.m in Sources */,
+				0FB26D551DFFC8020032376F /* TestProtocol.m in Sources */,
+				0F3E18F31DF7AAB200BAC693 /* TestSelector2.m in Sources */,
+				0F3E18EE1DF7AAB200BAC693 /* TestDic.m in Sources */,
+				0F3E18F21DF7AAB200BAC693 /* TestSelector.m in Sources */,
+				0FB26D471DFFC7D60032376F /* FruitBasket.m in Sources */,
+				0F3E18ED1DF7AAB200BAC693 /* TestClassMethod.m in Sources */,
+				0F66E0F71E023AD500AEC05B /* TestNSThread.m in Sources */,
+				0FB26D5F1DFFECCF0032376F /* TestFunctionPointer.m in Sources */,
+				0F43965D1DFE67A90057E598 /* TestKeyValueObserver.m in Sources */,
+				0FB26D581DFFC80D0032376F /* TestMainClass.m in Sources */,
+				0F4396651DFE97020057E598 /* TestProperty2.m in Sources */,
+				0FB26D4E1DFFC7F40032376F /* TablePrinter.m in Sources */,
+				0F3E18F11DF7AAB200BAC693 /* TestOverride.m in Sources */,
+				0FB26D5B1DFFDA720032376F /* TestEnum.m in Sources */,
+				0F3E18E61DF7AAB200BAC693 /* TestCopyObject.m in Sources */,
+				0F3E18EF1DF7AAB200BAC693 /* TestNSData.m in Sources */,
+				0FB26D521DFFC7FB0032376F /* TestClassProtocol.m in Sources */,
+				0F3E18E81DF7AAB200BAC693 /* TestStringCollection2.m in Sources */,
+				0FB26D631DFFF3640032376F /* TestGCD.m in Sources */,
+				0F5D03131DF95178001CFF0D /* TestProperty.m in Sources */,
+				0F3E18F41DF7AAB200BAC693 /* TestSelf.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F3E18C11DF7AA4100BAC693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F3E18C21DF7AA4100BAC693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F3E18C41DF7AA4100BAC693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DFUVB798T7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F3E18C51DF7AA4100BAC693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DFUVB798T7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F3E18B71DF7AA4100BAC693 /* Build configuration list for PBXProject "TestObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F3E18C11DF7AA4100BAC693 /* Debug */,
+				0F3E18C21DF7AA4100BAC693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F3E18C31DF7AA4100BAC693 /* Build configuration list for PBXNativeTarget "TestObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F3E18C41DF7AA4100BAC693 /* Debug */,
+				0F3E18C51DF7AA4100BAC693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F3E18B41DF7AA4100BAC693 /* Project object */;
+}
