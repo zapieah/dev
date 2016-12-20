@@ -22,5 +22,6 @@
 
 -(AddressCard*) lookUp:(NSString *)theName;
 -(BOOL) removeCard:(AddressCard *)theCard;
--(void) sort;
+-(void) sortBySelector;
+-(void) sortByBlock;
 @end

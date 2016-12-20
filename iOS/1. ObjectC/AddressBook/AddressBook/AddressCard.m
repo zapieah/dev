@@ -45,7 +45,10 @@
 }
 
 -(NSComparisonResult) compareNames:(id) element {
-    return [name compare:[element name]];
+    //NSComparisonResult result= [name compare:[element name]];
+    NSComparisonResult result= [[element name] compare:name];
+    NSLog(@"name = %@, ele name =%@, result = %ld",name, [element name], result);
+    return result;
 }
 
 @end

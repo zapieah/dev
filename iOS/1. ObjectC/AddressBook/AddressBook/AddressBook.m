@@ -59,12 +59,20 @@
     return NO;
 }
 
--(void) sort {
+-(void) sortBySelector {
     if (_book != nil && [_book count] > 1) {
         SEL sCompare = @selector(compareNames:);
         if ([[_book objectAtIndex:0] respondsToSelector:sCompare] == YES) {
             [_book sortUsingSelector:sCompare];
         }
+    }
+}
+
+-(void) sortByBlock {
+    if (_book != nil && [_book count] > 1) {
+        [_book sortUsingComparator:^(id obj1, id obj2) {
+            return [[obj1 name] compare:[obj2 name]];
+        }];
     }
 }
 @end

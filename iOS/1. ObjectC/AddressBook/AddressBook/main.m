@@ -16,8 +16,8 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
         
-        NSString *aName = @"JJ";
-        NSString *aEmail = @"jj@jj";
+        NSString *aName = @"DD";
+        NSString *aEmail = @"dd@dd";
         
         AddressCard *card1 = [[AddressCard alloc]init];
         
@@ -26,15 +26,25 @@ int main(int argc, const char * argv[]) {
         [card1 print];
         
         AddressCard *card2 = [[AddressCard alloc]init];
-        [card2 setName:@"AA"];
-        [card2 setEmail:@"aa@aa"];
+        [card2 setName:@"CC"];
+        [card2 setEmail:@"cc@cc"];
         [card2 print];
         
+        AddressCard *card3 = [[AddressCard alloc]init];
+        [card3 setName:@"BB"];
+        [card3 setEmail:@"bb@bb"];
+        [card3 print];
+
+        AddressCard *card4 = [[AddressCard alloc]init];
+        [card4 setName:@"AA"];
+        [card4 setEmail:@"aa@aa"];
+        [card4 print];
+
         AddressBook *myBook = [[AddressBook alloc]initWithName:@"bgjun's book"];
         [myBook addCard:card1];
-        [myBook addCard:card1];
         [myBook addCard:card2];
-        [myBook addCard:card2];
+        [myBook addCard:card3];
+        [myBook addCard:card4];
         [myBook entries];
         [myBook list];
         AddressCard *card = [myBook lookUp:@"AA"];
@@ -47,8 +57,11 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", card);
         else
             NSLog(@"not found");
-        
-        [myBook sort];
+
+        [myBook sortBySelector];
+        [myBook list];
+
+        [myBook sortByBlock];
         [myBook list];
         
         [myBook removeCard:card1];
