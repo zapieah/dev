@@ -17,7 +17,7 @@
 -(void) setDenominator: (int) d;
 -(int) numerator;
 -(int) denominator;
-#pragma Chapter 6
+#pragma mark Chapter 6
 -(double) convertToNum;
 @end
 @implementation Fraction {
@@ -39,7 +39,7 @@
 -(int) denominator {
     return denominator;
 }
-#pragma Chapter 6
+#pragma mark Chapter 6
 -(double) convertToNum {
     if (denominator != 0)
         return (double) numerator / denominator;
@@ -84,7 +84,7 @@
 #if 0
     accumulator /= value;
 #endif
-#pragma Chapter 6
+#pragma mark Chapter 6
     if (value != 0.0)
         accumulator /= value;
     else {
